@@ -1,0 +1,19 @@
+Namespaces:
+===========
+
+Three Namespaces
+
+    - default
+    - kube-system
+    - kube-public
+
+commands:
+=========
+
+kubectl create -f pod.yml => Default Namespaces
+kubectl create -f pod.yml --namespace=dev => Dev namespace
+kubectl create namespace dev
+kubectl get pods --all-namespaces
+
+
+
