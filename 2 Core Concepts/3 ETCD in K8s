@@ -1,0 +1,13 @@
+ETCD in K8s:
+============
+
+- ETCD stores info about
+
+    - Nodes
+    - PODS
+    - Configs
+    - Secrets
+    - Accounts
+    - Roles
+    - Bindings
+    
