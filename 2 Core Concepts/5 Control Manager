@@ -10,7 +10,7 @@ Control Manager
     Remediate Situation
     Node Monitor Period = 5s 
     Node Montior Grace Period = 40s
-    After that node is marker unreachable
+    After that node is marked unreachable
     POD Eviction Timeout - 5mins
 
 
@@ -18,5 +18,5 @@ Control Manager
     Replication Controller:
     -----------------------
 
-        - Ensures the numbers of replicasets are maintained
-        - 
+        - Ensures the numbers of replicasets are maintained in each node
+        
