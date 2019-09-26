@@ -11,3 +11,11 @@ ETCD in K8s:
     - Roles
     - Bindings
     
+Registry 
+
+    - minions 
+    - PODS
+    - replicasets
+    - deployments
+    - Roles
+    - Secrets
