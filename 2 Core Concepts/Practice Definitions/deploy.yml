@@ -20,6 +20,11 @@ spec:
       containers:
         - name: httpd-frontend
           image: httpd:2.4-alpine
+      tolerations:
+        - key: "app"
+          operator: "Equal"
+          value: "blue"
+          effect: "NoSchedule"
     selector:
       withLabels:
         app: http-frontend
