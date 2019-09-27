@@ -1,0 +1,17 @@
+K8s Concepts:
+=============
+
+    - API Server
+    - ETCD
+    - Scheduler
+    - Control Manager
+    - Kubelet
+    - Kubeproxy
+    - Kubectl
+    - ReplicationController
+    - ReplicaSets
+    - Deployments
+    - Service
+    - Namespaces
+    - Labels and Selectors
+    - Node Selectors
