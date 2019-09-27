@@ -1,0 +1,18 @@
+DaemonSets:
+-----------
+
+    - DaemonSets ensure one copy of the pod is always present in each node
+    - As Nodes are added to the cluster, Pods are added
+    - As nodes are removed from the cluster, these pods are garbage collected
+    - Delete the DaemonSets will delete the PODs it created
+
+
+Commands:
+=========
+    kubectl get nodes
+    kubectl create -f monitoring-daemonset.yml
+    kubectl get pods -o wide
+    kubectl get ds
+    kubectl describe ds monitoring-daemon
+    kubectl delete ds monitoring-daemon
+
