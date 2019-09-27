@@ -1,4 +1,8 @@
 Taints and Tolerations:
 ======================
 
-- 
+- POD to node relationship
+- Taints are set on nodes
+- Tolerations are set on pods
+
+kubectl taint nodes node-name key=value:taint-effect
