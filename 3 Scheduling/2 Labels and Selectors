@@ -4,4 +4,21 @@ Labels and Selectors:
 - Standard method to group things together
 - name the pods with the Labels
 - select the pods with Labels
+- Restrict nodes from accepting Pods
+- Taint is set on the master to prevent any PODS from accessing the master node
+
+
+
+Commands:
+=========
+
+kubectl taint nodes 
+
+    - NoSchedule
+    - PreferNoSchedule
+    - NoExecute
+
+kubectl taint nodes node1
+kubectl describe node kubemaster | grep Taint
+
 
