@@ -1,0 +1,10 @@
+Node Selectors:
+==============
+
+- 3 node with different resources
+
+
+Commands:
+=========
+
+- kubectl label node node1 size=Large
