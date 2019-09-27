@@ -1,0 +1,10 @@
+Resource Limits
+===============
+
+- Default Resource Requirements for POD/container
+
+    -  0.5 CPU
+    - 256 MB RAM
+
+PODs can throttle RAM but not CPU
+
