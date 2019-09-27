@@ -1,5 +1,7 @@
 Labels and Selectors:
 =====================
 
+- Standard method to group things together
 - name the pods with the Labels
 - select the pods with Labels
+
