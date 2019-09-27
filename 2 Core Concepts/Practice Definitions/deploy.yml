@@ -6,6 +6,8 @@ metadata:
     app: httpd-frontend
     tier: frontend
   namespace: dev
+  annotations:
+    buildVersion: 1.34
 spec:
    replicas: 3
    template:
