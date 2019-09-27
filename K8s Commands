@@ -1,0 +1,90 @@
+K8s Commands:
+==============
+
+    kubectl create -f demo.yaml
+    kubectl get pods <pod-name>
+    kubectl describe nodes <node-name> - describe detailed info about the resource
+    kubectl describe pod <pod-name>
+    kubectl delete -f pod.yaml  - Delete Resource
+    kubectl delete pods --all
+    kubectl exec <pod-name> date
+    kubectl exec <pod-name> -c <container-name> date
+    kubectl exec -it <pod-name> /bin/bash
+    kubectl logs <pod-name>
+
+
+  Kubeadm commands:
+  ==================
+
+    kubeadm init - kubeadm init [flags]  * Initialize Master Node (On Master)
+    kubeadm join - kubeadm join --token [] * Initialize Worker Node (On Worker)        
+    kubeadm token - kubeadm token [create|delete|list|generate]
+    kubeadm version - kubeadm version [flags]
+    kubeadm upgrade - kubeadm upgrade plan [version] [flags]
+
+    Pod Manifest file
+    ==================
+
+        kubectl create -f pod.yml
+        kubectl get pods
+        kubectl get pod -o wide
+        kubectl describe pod nginx-pod
+        kubectl exec -it nginx-pod /bin/sh
+        kubectl delete pod nginx-pod
+
+     ReplicaSets and Deployments:
+     ----------------------------
+
+     	kubectl create -f deploy-def.yml
+     	kubectl get pods
+     	kubectl get pod -o wide
+     	kubectl describe pods
+     	kubectl get rs
+     	kubectl get deployments
+     	kubectl replace -f rs-def.yml
+     	kubectl scale --replicas=6 -f rs-def.yml
+        kubectl rollout status deployment/myapp-deployment
+        kubectl rollout history deployment/myapp-deployment
+        kubectl rollout undo deployment/myapp-deployment
+        kubectl apply -f deploy-def.yml
+        kubectl run nginx --image=nginx
+            kubectl delete rs <rs-name>
+
+     Updates and Rollback:
+     =====================
+
+     create -   kubectl create -f deploy-def.yml
+     get   -    kubectl get deployments
+     update -   kubectl apply -f deploy-def.yml
+     status -   kubectl set image deployment/myapp-deployment nginx=nginx:1.9.1
+     Rollout-   kubectl rollout status deployment/myapp-deployment
+                kubectl rollout history deployment/myapp-deployment
+                kubectl rollout undo deployment/myapp-deployment
+    delete -    kubectl delete deployment myapp-deployment
+
+
+    Services:
+    =========
+
+        kubectl create -f service-def.yml
+        kubectl get services
+
+    Namespaces:
+    ===========
+
+    kubectl create -f pod.yml --namespace=dev => Dev namespace
+    kubectl create namespace dev
+    kubectl get pods --all-namespaces
+
+    Labels & Selectors:
+    ===================
+
+    	- kubectl label node node1 size=Large
+
+    DaemonSets:
+    ===========
+        kubectl get ds
+        kubectl describe ds monitoring-daemon 
+
+
+
