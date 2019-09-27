@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd-frontend
+  labels:
+    app: httpd-frontend
+    tier: frontend
+  namespace: dev
+  annotations:
+    buildVersion: 1.34
+spec:
+  replicas: 3
+  template:
+    metadata:
+      name: httpd-frontend
+      labels:
+        app: httpd-frontend
+        tier: frontend
+    spec:
+      containers:
+        - name: httpd-frontend
+          image: httpd:2.4-alpine
+          resources:
+            requests:
+              memory: : "1G"
+              cpu: 1
+            limits:
+              memory: "2G"
+              cpu: 2
+          ports:
+              - containerPort: 80
+                
+      tolerations:
+        - key: "app"
+          operator: "Equal"
+          value: "blue"
+          effect: "NoSchedule"
+  selector:
+      withLabels:
+        app: http-frontend
+        tier: frontend
