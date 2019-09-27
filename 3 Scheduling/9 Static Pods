@@ -1,0 +1,19 @@
+Static Pods:
+============
+
+    - Kubelet check the definition files in /etc/kubernetes/manifests
+    - Kubelet works at POD level
+    - Pods that have no intervention from others is know as static Pods
+    
+
+Daemonsets vs Kube API Server
+-----------------------------
+
+Daemonsets                                              Kube API Server
+
+Created by Kubelet                                      Created by Kube-API Server
+Deploy control-plane components as                      Deploy Monitoring and Logging Agents on nodes
+Static Pods
+
+    Ignored by the Kube-scheduler
+    
