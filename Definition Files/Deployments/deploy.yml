@@ -34,8 +34,8 @@ spec:
           envFrom:
               - configMapFrom:
                   name: app-config
-                  secretRef:
-                  name: app-secret
+                secretRef:
+                name: app-secret
   selector:
     withLabels:
       app: myapp
