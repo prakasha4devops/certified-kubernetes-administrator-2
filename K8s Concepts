@@ -12,5 +12,6 @@ K8s Concepts:
     - Deployments - Updates and Rollbacks
     - Service - Connect various components in the worker nodes
     - Namespaces - define a boundary for your worker nodes
+    - DaemonSets - One DS per cluster inside a POD
     - Labels and Selectors - Label your deployments and services
     - Node Selectors - Select which node is perfect for the right workload
