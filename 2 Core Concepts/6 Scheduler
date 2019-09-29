@@ -7,3 +7,6 @@ Scheduler:
     - Scheduler does the matching with the best resources in the node
     - Rank Nodes
     - Free Resources once we place the POD
+
+
+    ps -aux | grep kube-scheduler
