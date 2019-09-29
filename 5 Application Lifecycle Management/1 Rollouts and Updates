@@ -1,0 +1,19 @@
+Rollouts and Updates:
+=====================
+
+Deployment Strategies:
+======================
+
+    Recreate - Destroy and Create all
+    RollingUpdate - One by One
+
+    
+
+Commands:
+=========
+
+    - kubectl rollout status deployment/myapp-deployment
+    - kubectl apply -f deploy.yml
+    - kubectl rollout history deployment/myapp-deployment
+    - kubectl rollout undo deployment/myapp-deployment
+
