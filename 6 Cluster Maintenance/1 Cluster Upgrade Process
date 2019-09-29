@@ -1,0 +1,6 @@
+CLuster Upgrade Process:
+========================
+
+    kubectl drain node-1
+    kubectl uncordon node-1
+    kubeadm upgrade plan
