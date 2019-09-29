@@ -1,17 +1,16 @@
 K8s Concepts:
 =============
 
-    - API Server
-    - ETCD
-    - Scheduler
-    - Control Manager
-    - Kubelet
-    - Kubeproxy
-    - Kubectl
-    - ReplicationController
-    - ReplicaSets
-    - Deployments
-    - Service
-    - Namespaces
-    - Labels and Selectors
-    - Node Selectors
+    - API Server - Communication between master and worker node
+    - ETCD - Store all info happening in K8s
+    - Scheduler - Schedule which pod to place in which node
+    - Control Manager - Controls Nodes and ReplicaSets
+    - Kubelet - Registers nodes and creates PODs
+    - Kubeproxy - Direct Traffic from POD via Service
+    - Kubectl - CLI for interacting with K8s
+    - ReplicaSets - Maintain ReplicaSets in Nodes
+    - Deployments - Updates and Rollbacks
+    - Service - Connect various components in the worker nodes
+    - Namespaces - define a boundary for your worker nodes
+    - Labels and Selectors - Label your deployments and services
+    - Node Selectors - Select which node is perfect for the right workload
