@@ -22,3 +22,6 @@ Cluster Architecture:
 - Kube API is the primary communication components of the K8s Cluster
 - Kubelet is an agent that runs on each nodes of the Cluster
 - Kube-proxy takes care of the internal communication in the worker nodes
+
+
+Find all components in  /etc/kubernetes/manifests folder
