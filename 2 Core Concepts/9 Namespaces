@@ -15,5 +15,9 @@ commands:
     kubectl create namespace dev
     kubectl get pods --all-namespaces
 
+Resource Quota:
+===============
 
+    kubectl create -f resource-quota.yml
+    
 
