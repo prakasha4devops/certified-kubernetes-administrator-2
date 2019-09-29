@@ -1,13 +1,11 @@
 Kubelet:
 =========
 
-Register the node in the K8s cluster
-Create PODS
-Monitors Nodes and PODS
-Kubeadm doesn't deploy Kubelet
-
-
-ps -aux | grep Kubelet
-
+    - Register Nodes
+    - Create PODS
+    - Monitors Nodes and PODS
+    - Kubeadm doesn't deploy Kubelet
     - Manually install kubelet in worker Nodes
-    - 
+
+
+    ps -aux | grep kubelet
