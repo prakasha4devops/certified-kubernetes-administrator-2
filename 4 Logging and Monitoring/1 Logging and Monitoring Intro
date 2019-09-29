@@ -1,0 +1,22 @@
+Logging and Monitoring Introduction:
+====================================
+
+    - Monitor Cluster Components
+    - Monitoring Applications
+    - Monitoring Cluster componenets apps
+    - Application Logs
+
+    Solutions:
+    ==========
+
+        - Metrics Server
+        - Prometheus
+        - Elastic Stack
+        - DataDog
+        - Dynatrace
+
+    Kubelet has a subcomponent has cAdvisor
+
+    minikube addons enable metrics-server
+    git clone https://github.com/kubernetes-incubator/metrics-server
+
