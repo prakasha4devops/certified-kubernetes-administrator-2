@@ -1,0 +1,7 @@
+Create ConfigMaps:
+==================
+
+    - kubectl create configmap <config-name> --from-literal=<key><value>
+    - kubectl get configmaps
+    - kubectl describe configmap
+    
