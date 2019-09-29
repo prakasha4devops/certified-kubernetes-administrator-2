@@ -52,7 +52,7 @@ K8s Commands:
 
      Updates and Rollback:
      =====================
-     
+
 
      create -   kubectl create -f deploy-def.yml
      get   -    kubectl get deployments
@@ -87,5 +87,37 @@ K8s Commands:
         kubectl get ds
         kubectl describe ds monitoring-daemon 
 
+
+    Resource Consumption:
+    =====================
+
+        - kubectl top node
+
+    Logs:
+    ======
+
+        kubectl logs -f <pod-name>
+
+    ConfigMaps:
+    ===========
+
+    kubectl create configmap <config-name> --from-literal= K:V
+    kubectl get configmaps
+    kubectl describe configmaps
+
+    Secrets:
+    ========
+
+    kubectl create secret generic <secret-name> --from-literal=<key>=<value>
+    kubectl create secret generic <secret-name> --from-file=<key>=<value>
+    kubectl create secret generic app-secret --from-literal=DB_HOST=mysql
+
+
+    Cluster Maintenance:
+    ====================
+
+    kubectl drain node-1
+    kubectl uncordon node-1
+    kubeadm upgrade plan
 
 
