@@ -6,12 +6,12 @@ Control Manager
     Node Controller - Status of the Nodes
     -------------------------------------
     
-    Watch Status
-    Remediate Situation
-    Node Monitor Period = 5s 
-    Node Montior Grace Period = 40s
-    After that node is marked unreachable
-    POD Eviction Timeout - 5mins
+        Watch Status
+        Remediate Situation
+        Node Monitor Period = 5s 
+        Node Montior Grace Period = 40s
+        After that node is marked unreachable
+        POD Eviction Timeout - 5mins
 
 
 
