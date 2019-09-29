@@ -15,3 +15,10 @@ K8s Concepts:
     - DaemonSets - One DS per cluster inside a POD
     - Labels and Selectors - Label your deployments and services
     - Node Selectors - Select which node is perfect for the right workload
+    - Rollouts and Updates
+    - ConfigMaps
+    - Secrets
+    - Cluster Upgrade process
+    - Backup and Restore
+
+
