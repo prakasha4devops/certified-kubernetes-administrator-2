@@ -9,3 +9,14 @@ TLS Basics:
 
     - Private Key
     - Public Key
+
+
+    Public Key
+        
+        - .crt
+        - .pem
+    
+    Private Key
+
+        - .key
+        - .pem
