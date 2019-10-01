@@ -1,0 +1,14 @@
+Authentication:
+===============
+
+    - All user access is managed by the api-server
+
+    Admins - kubectl
+    Developers = curl https://kube-server-ip:6443
+
+
+    Admin => Authenticate Request => api-server => Process Request
+
+
+    Not Recommended
+    Role based Authorization
