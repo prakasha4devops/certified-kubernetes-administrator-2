@@ -1,0 +1,9 @@
+Multi Container Pods:
+=====================
+
+ 3 Common Patterns:
+ ==================
+
+    - Sidecar
+    - Adapter
+    - Ambassador
