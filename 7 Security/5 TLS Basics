@@ -1,0 +1,11 @@
+TLS Basics:
+===========
+
+ - Symmetric Encryption
+
+        - Encryption Key on both Client and Server
+
+- Assymetric Encryption
+
+    - Private Key
+    - Public Key
