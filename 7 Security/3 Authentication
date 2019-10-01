@@ -12,3 +12,9 @@ Authentication:
 
     Not Recommended
     Role based Authorization
+
+    - Static Password File
+    - Static Token File
+    - Certificates
+    - Identity Services
+    
