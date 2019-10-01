@@ -1,0 +1,9 @@
+API Groups:
+===========
+
+- metrics
+- healthz
+- version
+- api - oore
+- apis - named
+- logs
