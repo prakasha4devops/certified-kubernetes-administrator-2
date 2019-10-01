@@ -1,0 +1,24 @@
+Security Primitives:
+====================
+
+
+- Password based Authentication disabled
+- SSH based Authentication
+
+Who can access the Cluster - Authentication
+
+    File- Username and Password
+    Files - Username and Tokens
+    Certificates
+    External Authentication Providers - LDAP
+    Service Accounts
+
+What can they do - Authorization
+
+    Role Based Access Control
+    ABAC Authorization
+    Node Authorization
+    Webhook Mode
+
+
+Component communication is secured using TLS Encryption
