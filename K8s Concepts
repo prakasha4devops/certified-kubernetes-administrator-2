@@ -16,7 +16,7 @@ K8s Concepts:
     - Labels and Selectors - Label your deployments and services
     - Node Selectors - Select which node is perfect for the right workload
     - Rollouts and Updates
-    - ConfigMaps
+    - ConfigMaps - Store config data in Key:value pairs
     - Secrets
     - Cluster Upgrade process
     - Backup and Restore
