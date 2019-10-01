@@ -4,3 +4,14 @@ CLuster Upgrade Process:
     kubectl drain node-1
     kubectl uncordon node-1
     kubeadm upgrade plan
+
+
+    api server - Highest version
+    control-manager - x-1
+    scheduler - x-1
+    kubelet - x-2
+    kube-proxy- x-2
+
+    kubectl- x-1 x+1
+
+    
