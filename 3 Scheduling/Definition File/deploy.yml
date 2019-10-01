@@ -28,8 +28,7 @@ spec:
               memory: "2G"
               cpu: 2
           ports:
-              - containerPort: 80
-                
+              - containerPort: 80    
       tolerations:
         - key: "app"
           operator: "Equal"
