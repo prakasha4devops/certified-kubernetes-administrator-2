@@ -121,3 +121,11 @@ K8s Commands:
     kubeadm upgrade plan
 
 
+    Signing Certificates:
+    =====================
+
+    kubectl get csr
+    kubectl approve certificate jane
+    kubectl get csr jane -o yml
+
+
