@@ -129,3 +129,11 @@ K8s Commands:
     kubectl get csr jane -o yml
 
 
+    Persistent Volumes and Claims:
+    ==============================
+
+    kubectl create -f pvc-claim.yml
+    kubectl get pvc
+    kubectl delete pvc <pvc-name>
+
+
