@@ -1,0 +1,6 @@
+Persistent Volumes:
+===================
+
+    - ReadOnlyMany
+    - ReadWriteOnce
+    - ReadWriteMany
