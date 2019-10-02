@@ -1,0 +1,15 @@
+PV Claims:
+==========
+
+- Binds PV to PVC
+- 1 PV => 1 PVC
+
+- No PV => PVC will remain in pending state
+
+
+Commands:
+========
+
+    kubectl create -f pvc-claim.yml
+    kubectl get pvc
+    kubectl delete pvc <pvc-name>
