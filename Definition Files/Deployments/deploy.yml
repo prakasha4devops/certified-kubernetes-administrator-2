@@ -20,6 +20,17 @@ spec:
       containers:
         - name: postgres
           image: postgres
+          env:
+            - name: SECRET_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: mysecret
+                  key: username
+            - name: SECRET_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysecret
+                  key: password
           ports:
             - containerPort: 6379
           securityContext:
@@ -43,11 +54,15 @@ spec:
           volumeMounts:
             - mounthPath: /opt
               name: data-volume
+              readOnly: true
       volumes:
         - name: data-volume
           awsElasticBlockStore:
             volumeID: <volume-id>
             fsType: ext4
+        - name: foo
+          secret:
+            secretName: mysecret
       imagePullSecrets:
         - name: regcred
   selector:
