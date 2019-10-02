@@ -1,0 +1,21 @@
+Cluster Role and Role Bindings:
+===============================
+
+    - Role and Role Bindings are namespaced
+    - Created within namespace
+
+
+    Cluster Admin:
+    --------------
+
+        - can view nodes
+        - can create nodes
+        - can delete nodes
+
+    
+    Storage Admin:
+    --------------
+
+        -  Can view PVs
+        -  Can create PVs
+        -  Can delete PVs
