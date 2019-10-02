@@ -1,0 +1,17 @@
+Role Based Access Control:
+==========================
+
+ Commands:
+ =========
+
+    kubectl get roles
+    kubectl get rolebindings
+    kubectl describe role developer
+    kubectl describe rolebinding devuser-developer-binding
+
+
+    kubectl auth can-i delete deployments
+    kubectl auth can-i delete nodes
+    kubectl auth can-i create deployments --as dev-user
+    kubectl auth can-i create pods --as dev-user
+    kubectl auth can-i create pods --as dev-user --namespace test
