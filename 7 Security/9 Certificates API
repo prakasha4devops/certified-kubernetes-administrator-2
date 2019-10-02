@@ -1,0 +1,17 @@
+Certificates API:
+=================
+
+    - Built in Certificates API
+
+
+    commands:
+    =========
+
+    kubectl get csr
+    kubectl approve certificate jane
+    kubectl get csr jane -o yml
+
+    - All certificate related issues are managed by Control Manager
+
+        - CSR Approving
+        - CSR Signing
