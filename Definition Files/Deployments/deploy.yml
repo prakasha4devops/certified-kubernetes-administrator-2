@@ -22,6 +22,10 @@ spec:
           image: postgres
           ports:
             - containerPort: 6379
+          securityContext:
+            runAsUser: 1000
+            capabilites:
+              add: ["MAC_ADMIN"]
           resources:
               requests:
                   memory: "1G"
@@ -35,7 +39,17 @@ spec:
               - configMapFrom:
                   name: app-config
                 secretRef:
-                name: app-secret
+                  name: app-secret
+          volumeMounts:
+            - mounthPath: /opt
+              name: data-volume
+      volumes:
+        - name: data-volume
+          awsElasticBlockStore:
+            volumeID: <volume-id>
+            fsType: ext4
+      imagePullSecrets:
+        - name: regcred
   selector:
     withLabels:
       app: myapp
