@@ -9,7 +9,6 @@ users:
       user:
         client-certificate: admin.crt
         client-key: admin.key
-
 context:
   - name: my-kube-admin@my-kube-playground
     context:
