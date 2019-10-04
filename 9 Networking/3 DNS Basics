@@ -1,0 +1,21 @@
+DNS Basics:
+===========
+
+
+    - /etc/hosts
+    - Hostname => IP address = Name Resolution
+
+
+    Move to DNS Server
+
+    - /etc/resolv.conf
+
+
+    Domains and Subdomains
+
+    - A Record - IP to Hostname
+    - CNAME - One Domain name to another 
+
+
+    nslookup www.google.com
+    dig www.google.com
