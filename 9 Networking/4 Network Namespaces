@@ -1,0 +1,13 @@
+Network Namespaces:
+===================
+
+commands:
+=========
+
+ip netns add red
+ip netns add blue
+ip netns
+ip link
+ip -n red link
+arp
+ip netns exec red arp
