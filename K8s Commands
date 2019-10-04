@@ -137,3 +137,23 @@ K8s Commands:
     kubectl delete pvc <pvc-name>
 
 
+    Networking Commands:
+    ====================
+
+    ip route add 192.168.1.0/24 via 192.168.2.1
+    ip route add 172.217.194.0/24 via 192.168.2.1
+    ip route add default via 192.168.2.1
+
+    ip link
+    ip addr
+    ip addr add
+    ip route       - route
+    ip route add
+
+    DNS Basics:
+    ===========
+
+    - nslookup www.google.com
+    dig www.google.com
+
+
