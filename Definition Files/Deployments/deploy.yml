@@ -32,7 +32,7 @@ spec:
                   name: mysecret
                   key: password
           ports:
-            - containerPort: 6379
+            - containerPort: 5432
           securityContext:
             runAsUser: 1000
             capabilites:
