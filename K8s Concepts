@@ -20,5 +20,7 @@ K8s Concepts:
     - Secrets
     - Cluster Upgrade process
     - Backup and Restore
+    - Switching and Routing
+    - DNS Basics
 
 
