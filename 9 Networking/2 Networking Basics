@@ -18,3 +18,16 @@ Networking Basics:
     ip route add 192.168.1.0/24 via 192.168.2.1
     ip route add 172.217.194.0/24 via 192.168.2.1
     ip route add default via 192.168.2.1
+
+commands:
+==========
+
+
+
+- cat /proc/sys/net/ipv4/ip_forward
+
+ ip link
+ ip addr
+ ip addr add
+ ip route       - route
+ ip route add 
