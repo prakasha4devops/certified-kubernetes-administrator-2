@@ -1,0 +1,8 @@
+Cluster Networking:
+===================
+
+- etcd - 2379
+- kube-apiserver - 6443
+- kubelet - 10250
+- kube-scheduler- 10251
+- kube-controller-manager - 10252
