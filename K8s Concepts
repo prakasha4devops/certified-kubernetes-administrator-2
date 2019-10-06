@@ -17,10 +17,19 @@ K8s Concepts:
     - Node Selectors - Select which node is perfect for the right workload
     - Rollouts and Updates
     - ConfigMaps - Store config data in Key:value pairs
-    - Secrets
+    - Secrets - Store confidential info in a hashed k:v format
     - Cluster Upgrade process
-    - Backup and Restore
+    - Backup and Restore - Taking snapshot of the ETCD Server
     - Switching and Routing
     - DNS Basics
+
+Cluster Networking:
+===================
+
+- etcd - 2379
+- kube-apiserver - 6443
+- kubelet - 10250
+- kube-scheduler- 10251
+- kube-controller-manager - 10252
 
 
