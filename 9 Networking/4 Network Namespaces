@@ -1,6 +1,11 @@
 Network Namespaces:
 ===================
 
+    - Network Namespaces are used by Docker to implement Network Isolation
+    - Host = House
+    - Namespaces = Rooms in the house
+    
+
 commands:
 =========
 
