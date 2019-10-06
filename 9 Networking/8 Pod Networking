@@ -1,0 +1,14 @@
+Pod Networking:
+===============
+
+
+    - Every Pod should have an IP address
+    - Every pod should be able to communicate with every other POD in the same node
+    - Every POD should be able to communicate with  every other POD on other nodes without NAT
+
+Commands:
+=========
+
+    ps aux | grep kubelet
+    ls /etc/cni/net.d
+    lst /opt/cni/bin
