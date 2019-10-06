@@ -1,0 +1,8 @@
+DNS in K8s
+==========
+
+- Whenever a service is created, K8s maps the service name to the IP address
+- For each namespace, DNS creates a subdomain
+
+
+curl https://webservice.apps.svc.cluster-local
