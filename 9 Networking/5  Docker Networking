@@ -1,0 +1,12 @@
+Docker Networking:
+==================
+
+docker run --network=none nginx
+docker run --network=host nginx
+docker run --network=bridge nginx
+
+
+commands:
+=========
+
+ip netns 
