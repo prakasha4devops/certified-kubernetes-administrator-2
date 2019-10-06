@@ -1,0 +1,23 @@
+Container Networking INterface:
+===============================
+
+Container Runtime must create the network namespace
+Identify the network the container must attach to
+Container Runtime to invoke network plugin (bridge) when container is Added
+Container Runtime to invoke network plugin (bridge) when container is Deleted
+JSON format of Network Configuration
+
+Must support Command Line Arguments ADD/DEL/CHECK
+Must support parameters container id, network ns etc
+Must manage IP address assignment to PODS
+Must Return results in a specific format
+
+Products that implement CNI Standards:
+--------------------------------------
+
+    - weaveworks
+    - flannel
+    - cilium
+    - NSX
+    - 
+
