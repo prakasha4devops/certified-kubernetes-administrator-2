@@ -1,0 +1,9 @@
+Core DNS:
+==========
+
+
+cat /etc/coredns/Corefile
+
+curl https://webservice.apps.svc.cluster-local
+
+curl https://webservice.default.svc.cluster.local
